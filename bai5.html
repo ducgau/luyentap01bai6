@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let b=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"]
+    let kq="";
+    function addname(v) {
+        for (let i=0;i<a.length;i++){
+            if (v===a[i]){
+               kq=b[i]
+                break;
+            }
+            else {
+                 kq="khong tim thay ten"
+            }
+        }
+        return kq;
+    }
+    let v =prompt("nhap ten");
+    alert(addname(v))
+</script>
+
+</body>
+</html>
